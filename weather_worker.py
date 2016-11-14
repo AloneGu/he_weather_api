@@ -27,7 +27,7 @@ class WeatherWorker(object):
 
     def get_basic_data(self,city):
         city_id = trans_city_name(city)
-        tmp_url = BASE_URL + 'weather?key={}&city={}'.format(API_KEY,city)
+        tmp_url = BASE_URL + 'weather?key={}&city={}'.format(API_KEY,city_id)
         print tmp_url
         res = requests.get(tmp_url)
         res_dict = eval(res.content)['HeWeather5'][0]
