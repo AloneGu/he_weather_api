@@ -12,3 +12,11 @@ http://docs.heweather.com/222344
         set API_KEY in config.py
 
         python demo.py
+
+-----------------------
+
+## history data is expensive , so crawl from wunderground
+
+## Usage
+
+		python wunderground_util.py
