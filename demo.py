@@ -10,6 +10,6 @@
 
 from weather_worker import WeatherWorker
 
-if __name__=='__main__':
+if __name__ == '__main__':
     t = WeatherWorker()
     print t.get_basic_data('guangzhou')
