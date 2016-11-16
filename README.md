@@ -15,7 +15,7 @@ http://docs.heweather.com/222344
 
 -----------------------
 
-## history data is expensive , so crawl from wunderground
+## history data is expensive , so crawl from wunderground (https://www.wunderground.com/history/)
 
 ## Usage
 
