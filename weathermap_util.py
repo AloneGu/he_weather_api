@@ -5,7 +5,7 @@
 
 from config import WEATHERMAP_API_KEY
 import requests
-BASE_URL = 'http://api.openweathermap.org/data/2.5/forecast?q={},cn&mode=json&APPID={}'
+BASE_URL = 'http://api.openweathermap.org/data/2.5/forecast?q={},cn&mode=json&units=metric&APPID={}'
 
 def get_hour_forecast(city):
     url = BASE_URL.format(city,WEATHERMAP_API_KEY)
