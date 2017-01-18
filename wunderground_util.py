@@ -14,6 +14,7 @@ import datetime
 
 TARGET_ASTRO = 'Actual Time'
 BASE_URL = 'https://www.wunderground.com/history/wmo/58926/{}/{}/{}/DailyHistory.html?req_city={}&req_state=35&req_statename=China&reqdb.zip=00000&reqdb.magic=301&reqdb.wmo=58926&MR=1'
+FORECAST_URL = 'https://www.wunderground.com/cgi-bin/findweather/getForecast?query={}#forecast-table'
 
 def trans_time(year,month,day,time_str):
     tmp_str ='{}-{}-{} {}'.format(year,month,day,time_str[:-4])
@@ -98,6 +99,7 @@ def get_his_hour_data(city,year,month,day):
 
 
 if __name__=='__main__':
-    print get_his_data('xianyang',2016,3,12)
-    print get_his_hour_data('xianyang',2016,3,12)
+    #print get_his_data('xianyang',2016,3,12)
+    print get_his_hour_data('xianyang',2015,12,8)
+    #print get_today_hour_data('xianyang')
 

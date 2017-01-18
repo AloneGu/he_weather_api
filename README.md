@@ -9,7 +9,7 @@ http://docs.heweather.com/222344
 
         cp config_example.py config.py
 
-        set API_KEY in config.py
+        set API_KEY, WEATHERMAP_API_KEY in config.py
 
         python demo.py
 
@@ -17,6 +17,10 @@ http://docs.heweather.com/222344
 
 ## history data is expensive , so crawl from wunderground (https://www.wunderground.com/history/)
 
+## get 3 hour forecast from open weather map api
+
 ## Usage
 
 		python wunderground_util.py
+
+		python weathermap_util.py
